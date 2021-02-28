@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Coffeeroasters subscription site</title>
+
+    <link rel="stylesheet" href="./styles/shared.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="main-nav">
+        <div class="logo">
+          <a href="/index.html">
+            <img src="./assets/shared/desktop/logo.svg" alt="coffeeroasters" />
+          </a>
+        </div>
+
+        <ul>
+          <li><a class="nav-text barlow" href="/index.html">Home</a></li>
+          <li><a class="nav-text barlow" href="/about.html">About us</a></li>
+          <li>
+            <a class="nav-text barlow" href="/plan.html">Create your plan</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Show only on mobile -->
+      <nav class="mobile-nav">
+        <div class="mobile-nav__header">
+          <a href="/index.html"
+            ><img src="./assets/shared/desktop/logo.svg" alt="coffeeroasters"
+          /></a>
+          <button class="mobile-nav__toggle">
+            <img
+              src="./assets/shared/mobile/icon-hamburger.svg"
+              alt="menu toggler"
+            />
+          </button>
+        </div>
+
+        <div class="mobile-nav__content">
+          <ul>
+            <li>
+              <a href="/index.html" class="mobile-nav__text barlow">Home</a>
+            </li>
+            <li>
+              <a href="/about.html" class="mobile-nav__text barlow">About Us</a>
+            </li>
+            <li>
+              <a href="/plan.html" class="mobile-nav__text barlow"
+                >Create your plan</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="hero half-border">
+        <div class="hero__content">
+          <h1 class="fraunces primary-text">Great coffee made simple.</h1>
+          <p class="barlow">
+            Start your mornings with the world’s best coffees. Try our expertly
+            curated artisan coffees from our best roasters delivered directly to
+            your door, at your schedule.
+          </p>
+          <a href="/plan.html" class="btn btn-primary fraunces"
+            >Create your plan</a
+          >
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="collection">
+        <h2 class="bg-text fraunces">Our collection</h2>
+
+        <div class="collection__items">
+          <div class="collection__item">
+            <div class="collection__item-graphic">
+              <img
+                src="./assets/home/desktop/image-gran-espresso.png"
+                alt="gran espresso item"
+                class=" "
+              />
+            </div>
+
+            <div class="collection__item-info">
+              <h3 class="quanternary-text fraunces">Gran Espresso</h3>
+              <p class="body-text barlow">
+                Light and flavorful blend with cocoa and black pepper for an
+                intense experience
+              </p>
+            </div>
+          </div>
+
+          <div class="collection__item">
+            <div class="collection__item-graphic">
+              <img
+                src="./assets/home/desktop/image-planalto.png"
+                alt="Planalto coffee item"
+                class=" "
+              />
+            </div>
+
+            <div class="collection__item-info">
+              <h3 class="quanternary-text fraunces">Planalto</h3>
+              <p class="body-text barlow">
+                Brazilian dark roast with rich and velvety body, and hints of
+                fruits and nuts
+              </p>
+            </div>
+          </div>
+
+          <div class="collection__item">
+            <div class="collection__item-graphic">
+              <img
+                src="./assets/home/desktop/image-piccollo.png"
+                alt="Piccollo coffee item"
+                class=" "
+              />
+            </div>
+
+            <div class="collection__item-info">
+              <h3 class="quanternary-text fraunces">Piccollo</h3>
+              <p class="body-text barlow">
+                Mild and smooth blend featuring notes of toasted almond and
+                dried cherry
+              </p>
+            </div>
+          </div>
+
+          <div class="collection__item">
+            <div class="collection__item-graphic">
+              <img
+                src="./assets/home/desktop/image-danche.png"
+                alt="Danche coffee item"
+                class=" "
+              />
+            </div>
+
+            <div class="collection__item-info">
+              <h3 class="quanternary-text fraunces">Danche</h3>
+              <p class="body-text barlow">
+                Ethiopian hand-harvested blend densely packed with vibrant fruit
+                notes
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reason">
+        <div class="reason__header half-border">
+          <h2 class="tertiary-text fraunces">Why choose us?</h2>
+          <p class="body-text barlow">
+            A large part of our role is choosing which particular coffees will
+            be featured in our range. This means working closely with the best
+            coffee growers to give you a more impactful experience on every
+            level.
+          </p>
+        </div>
+
+        <div class="reason__items">
+          <div class="reason__item half-border">
+            <div class="reason__item-graphic">
+              <img
+                src="./assets/home/desktop/icon-coffee-bean.svg"
+                alt="coffee bean "
+              />
+            </div>
+            <div class="reason__item-info">
+              <h3 class="quanternary-text fraunces">Best quality</h3>
+              <p class="body-text barlow">
+                Discover an endless variety of the world’s best artisan coffee
+                from each of our roasters.
+              </p>
+            </div>
+          </div>
+
+          <div class="reason__item half-border">
+            <div class="reason__item-graphic">
+              <img src="./assets/home/desktop/icon-gift.svg" alt="gift box" />
+            </div>
+
+            <div class="reason__item-info">
+              <h3 class="quanternary-text fraunces">Exclusive benefits</h3>
+              <p class="body-text barlow">
+                Special offers and swag when you subscribe, including 30% off
+                your first shipment.
+              </p>
+            </div>
+          </div>
+
+          <div class="reason__item half-border">
+            <div class="reason__item-graphic">
+              <img
+                src="./assets/home/desktop/icon-truck.svg"
+                alt="delivery truck"
+              />
+            </div>
+            <div class="reason__item-info">
+              <h3 class="quanternary-text fraunces">Free shipping</h3>
+              <p class="body-text barlow">
+                We cover the cost and coffee is delivered fast. Peak freshness:
+                guaranteed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="process">
+        <h4 class="quanternary-text fraunces">How it works</h4>
+
+        <div class="process__items">
+          <div class="process__item">
+            <h2 class="primary-text fraunces">01</h2>
+            <h3 class="tertiary-text fraunces dark-blue-text">
+              Pick your coffee
+            </h3>
+            <p class="body-text barlow dark-blue-text">
+              Select from our evolving range of artisan coffees. Our beans are
+              ethically sourced and we pay fair prices for them. There are new
+              coffees in all profiles every month for you to try out.
+            </p>
+          </div>
+          <div class="process__item">
+            <h2 class="primary-text fraunces">02</h2>
+            <h3 class="tertiary-text fraunces dark-blue-text">
+              Choose the frequency
+            </h3>
+            <p class="body-text barlow dark-blue-text">
+              Customize your order frequency, quantity, even your roast style
+              and grind type. Pause, skip or cancel your subscription with no
+              commitment through our online portal.
+            </p>
+          </div>
+          <div class="process__item">
+            <h2 class="primary-text fraunces">03</h2>
+            <h3 class="tertiary-text fraunces dark-blue-text">
+              Receive and enjoy!
+            </h3>
+            <p class="body-text barlow dark-blue-text">
+              We ship your package within 48 hours, freshly roasted. Sit back
+              and enjoy award-winning world-class coffees curated to provide a
+              distinct tasting experience.
+            </p>
+          </div>
+        </div>
+
+        <div class="process__cta">
+          <a href="/plan.html" class="btn btn-primary fraunces">
+            Create your plan</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <nav class="footer-nav">
+        <div class="logo">
+          <a href="/index.html">
+            <img
+              src="./assets/shared/desktop/logo-light.svg"
+              alt="coffeeroasters"
+            />
+          </a>
+        </div>
+
+        <ul>
+          <li>
+            <a class="nav-text" href="/index.html">Home</a>
+          </li>
+          <li>
+            <a class="nav-text" href="/about.html">About us</a>
+          </li>
+          <li>
+            <a class="nav-text" href="/plan.html">Create your plan</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="social__icons">
+        <a target="_blank" href="https://www.facebook.com">
+          <img
+            src="./assets/shared/desktop/icon-facebook.svg"
+            alt="facebook link"
+          />
+        </a>
+        <a target="_blank" href="https://www.twitter.com">
+          <img
+            src="./assets/shared/desktop/icon-twitter.svg"
+            alt="twitter link"
+          />
+        </a>
+        <a target="_blank" href="https://www.instagram.com">
+          <img
+            src="./assets/shared/desktop/icon-instagram.svg"
+            alt="instagram link"
+          />
+        </a>
+      </div>
+    </footer>
+
+    <script src="./js/mobile.js"></script>
+  </body>
+</html>

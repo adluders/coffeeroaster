@@ -1,0 +1,170 @@
+/* Hero */
+.hero {
+  background-image: url("../assets/about/desktop/image-hero-whitecup.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 8rem 0 8rem 5rem;
+}
+
+/* Commitment */
+.commitment {
+  margin: 10rem auto;
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  padding: 0 85px;
+  color: var(--dark-grey-blue);
+}
+
+.commitment__graphic {
+  background-image: url("../assets/about/desktop/image-commitment.jpg");
+  width: 445px;
+  height: 520px;
+}
+
+.commitment__details {
+  width: 540px;
+}
+
+.commitment__details h2 {
+  margin-bottom: 2rem;
+}
+
+/* Quality */
+.quality {
+  color: var(--light-cream);
+  position: relative;
+  margin: 16rem 0 10.5rem 0;
+  display: flex;
+}
+
+.quality__details {
+  /* background-color: var(--dark-grey-blue); */
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  padding-bottom: 11rem;
+  background-image: url("../assets/about/desktop/bg-quality.png");
+}
+
+.quality__details h2 {
+  margin-bottom: 1.7rem;
+  max-width: 50%;
+}
+
+.quality__details p {
+  max-width: 50%;
+}
+
+.quality__graphic {
+  position: absolute;
+  width: 445px;
+  height: 474px;
+  /* right: 20px; */
+  bottom: 5.5rem;
+  right: 5.5rem;
+  background-image: url("../assets/about/desktop/image-quality.jpg");
+}
+
+/* Headquarters */
+.headquarters__items {
+  display: flex;
+  gap: 6rem;
+  margin-top: 4.5rem;
+}
+
+.headquarters__item h5 {
+  margin: 2.8rem 0 1rem 0;
+}
+
+@media screen and (min-width: 631px) and (max-width: 1000px) {
+  .hero {
+    background-image: url("../assets/about/tablet/image-hero-whitecup.jpg");
+    background-size: contain;
+  }
+
+  /* Commitment */
+  .commitment {
+    gap: 4rem;
+    padding: 0px;
+  }
+
+  .commitment__graphic {
+    background-image: url("../assets/about/tablet/image-commitment.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 280px;
+  }
+
+  .commitment__details {
+    width: 339px;
+  }
+
+  /*Quality  */
+  .quality {
+    padding-top: 10rem;
+  }
+
+  .quality__details {
+    background-size: cover;
+    padding-top: 14rem;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .quality__details h2,
+  .quality__details p {
+    max-width: 100%;
+  }
+
+  .quality__graphic {
+    width: 573px;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 2.5%;
+    /* left: 10%; */
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .hero {
+    background-image: url("../assets/about/mobile/image-hero-whitecup.jpg");
+    background-size: cover;
+    padding: 6.5rem 1.5rem;
+  }
+
+  /* commitment */
+  .commitment {
+    flex-direction: column;
+    text-align: center;
+    /* margin-bottom: 4.5rem; */
+  }
+
+  .commitment__graphic {
+    background-image: url("../assets/about/mobile/image-commitment.jpg");
+    width: 100%;
+  }
+
+  /* Quality */
+  .quality {
+    margin-top: 7rem;
+  }
+  .quality__graphic {
+    background-image: url("../assets/about/mobile/image-quality.jpg");
+    background-size: cover;
+    max-width: 85%;
+    left: 8%;
+  }
+
+  /* headquarters */
+  .headquarters {
+    text-align: center;
+  }
+
+  .headquarters__items {
+    flex-direction: column;
+  }
+}

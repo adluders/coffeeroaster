@@ -1,0 +1,381 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <title>Frontend Mentor | Coffeeroasters subscription site</title>
+
+  <link rel="stylesheet" href="./styles/shared.css">
+  <link rel="stylesheet" href="./styles/plan.css">
+</head>
+
+<body>
+  <div class="modal-open"></div>
+  <header>
+    <nav class="main-nav">
+      <div class="logo">
+        <a href="/index.html">
+          <img src="./assets/shared/desktop/logo.svg" alt="coffeeroasters" />
+        </a>
+      </div>
+
+      <ul>
+        <li><a class="nav-text barlow" href="/index.html">Home</a></li>
+        <li><a class="nav-text barlow" href="/about.html">About us</a></li>
+        <li>
+          <a class="nav-text barlow" href="/plan.html">Create your plan</a>
+        </li>
+      </ul>
+    </nav>
+
+    
+      <!-- Show only on mobile -->
+      <nav class="mobile-nav">
+        <div class="mobile-nav__header">
+          <a href="/index.html"
+            ><img src="./assets/shared/desktop/logo.svg" alt="coffeeroasters"
+          /></a>
+          <button class="mobile-nav__toggle">
+            <img
+              src="./assets/shared/mobile/icon-hamburger.svg"
+              alt="menu toggler"
+            />
+          </button>
+        </div>
+
+        <div class="mobile-nav__content">
+          <ul>
+            <li>
+              <a href="/index.html" class="mobile-nav__text barlow">Home</a>
+            </li>
+            <li>
+              <a href="/about.html" class="mobile-nav__text barlow">About Us</a>
+            </li>
+            <li>
+              <a href="/plan.html" class="mobile-nav__text barlow"
+                >Create your plan</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <section class="hero half-border">
+      <div class="hero__content">
+        <h1 class="fraunces primary-text"> Create a plan</h1>
+        <p class="barlow">
+          Build a subscription plan that best fits your needs. We offer an assortment of the best 
+  artisan coffees from around the globe delivered fresh to your door.
+        </p>
+      </div>
+    </section>
+  </header>
+
+ <main>
+  <section class="process">
+
+    <div class="process__items">
+      <div class="process__item">
+        <h2 class="primary-text fraunces">01</h2>
+        <h3 class="tertiary-text fraunces dark-blue-text">Pick your coffee</h3>
+        <p class="body-text barlow dark-blue-text">
+          Select from our evolving range of artisan coffees. Our beans are
+          ethically sourced and we pay fair prices for them. There are new
+          coffees in all profiles every month for you to try out.
+        </p>
+      </div>
+      <div class="process__item">
+        <h2 class="primary-text fraunces">02</h2>
+        <h3 class="tertiary-text fraunces dark-blue-text">Choose the frequency</h3>
+        <p class="body-text barlow dark-blue-text">
+          Customize your order frequency, quantity, even your roast style
+          and grind type. Pause, skip or cancel your subscription with no
+          commitment through our online portal.
+        </p>
+      </div>
+      <div class="process__item">
+        <h2 class="primary-text fraunces">03</h2>
+        <h3 class="tertiary-text fraunces dark-blue-text">Receive and enjoy!</h3>
+        <p class="body-text barlow dark-blue-text">
+          We ship your package within 48 hours, freshly roasted. Sit back
+          and enjoy award-winning world-class coffees curated to provide a
+          distinct tasting experience.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="ordering">
+    <div class="ordering__steps">
+      <div class="ordering__step" id="one">
+        <a href="#step-one">
+          <h2 class="quanternary-text fraunces active-text">
+            <span class="">01</span>
+             Preferences
+          </h2>
+        </a>
+      </div>
+      <div class="ordering__step" id="two">
+        <a href="#step-two">
+
+          <h2 class="quanternary-text fraunces muted-text">
+            <span>02</span>
+             Bean type
+          </h2>
+        </a>
+      </div>
+      <div class="ordering__step" id="three">
+        <a href="#step-three">
+
+          <h2 class="quanternary-text fraunces muted-text">
+            <span>03</span>
+             Quantity
+          </h2>
+        </a>
+      </div>
+      <div class="ordering__step" id="four">
+        <a href="#step-four">
+
+          <h2 class="quanternary-text fraunces muted-text">
+            <span>04</span>
+             Grind option
+          </h2>
+        </a>
+      </div>
+      <div class="ordering__step" id="five">
+        <a href="#step-five">
+
+          <h2 class="quanternary-text fraunces muted-text">
+            <span>05</span>  Deliveries
+          </h2>
+        </a>
+      </div>
+    </div>
+
+    <div class="ordering__processes">
+      <div class="ordering__process" >
+        <div class="ordering__process-header" id="step-one">
+          <h2 class="secondary-text fraunces muted-text">How do you drink your coffee?</h2>
+          <img src="./assets/plan/desktop/icon-arrow.svg" alt="arrow">
+        </div>
+
+        <div class="ordering__process-cards dark-blue-text" id="step-one__choices">
+          <div class="ordering__process-card half-border" aria-selected="false" data-coffee='capsule'>
+            <h3 class="quanternary-text fraunces">Capsule</h3>
+            <p class="body-text barlow">Compatible with Nespresso systems and similar brewers</p>
+          </div>
+          <div class="ordering__process-card half-border" aria-selected="false" data-coffee="filter">
+            <h3 class="quanternary-text fraunces">Filter</h3>
+            <p class="body-text barlow">For pour over or drip methods like Aeropress, Chemex, and V60</p>
+          </div>
+          <div class="ordering__process-card half-border" aria-selected="false" data-coffee="espresso">
+                 <h3 class="quanternary-text fraunces">Espresso</h3>
+            <p class="body-text barlow">
+              Dense and finely ground beans for an intense, flavorful experience</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ordering__process" >
+        <div class="ordering__process-header" id="step-two">
+          <h2 class="secondary-text fraunces muted-text">What type of coffee?</h2>
+          <img src="./assets/plan/desktop/icon-arrow.svg" alt="arrow">
+        </div>
+
+        <div class="ordering__process-cards dark-blue-text" id="step-two__choices">
+          <div class="ordering__process-card half-border" aria-selected="false" data-bean='single origin'>
+            <h3 class="quanternary-text fraunces">Single origin</h3>
+            <p class="body-text barlow">Distinct, high quality coffee from a specific family-owned farm</p>
+          </div>
+          <div class="ordering__process-card half-border" aria-selected="false" data-bean="decaf">
+            <h3 class="quanternary-text fraunces">Decaf</h3>
+            <p class="body-text barlow">Just like regular coffee, except the caffeine has been removed</p>
+          </div>
+          <div class="ordering__process-card half-border" aria-selected="false" data-bean="blended">
+                 <h3 class="quanternary-text fraunces">Blended</h3>
+            <p class="body-text barlow">
+              Combination of two or three dark roasted beans of organic coffees</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="ordering__process" >
+        <div class="ordering__process-header" id="step-three">
+          <h2 class="secondary-text fraunces muted-text">How much would you like?</h2>
+          <img src="./assets/plan/desktop/icon-arrow.svg" alt="arrow">
+        </div>
+
+        <div class="ordering__process-cards dark-blue-text" id="step-three__choices">
+          <div class="ordering__process-card half-border" aria-selected="false" data-amount="250g" data-weekly="7.20" data-biweekly="9.60" data-monthly="12.00">
+            <h3 class="quanternary-text fraunces">250g</h3>
+            <p class="body-text barlow">Perfect for the solo drinker. Yields about 12 delicious cups.</p>
+          </div>
+          <div class="ordering__process-card half-border" aria-selected="false" data-amount="500g" data-weekly="13.00" data-biweekly="17.50" data-monthly="22.00">
+            <h3 class="quanternary-text fraunces">500g</h3>
+            <p class="body-text barlow">Perfect option for a couple. Yields about 40 delectable cups.</p>
+          </div>
+          <div class="ordering__process-card half-border" aria-selected="false" data-amount="1000g" data-weekly="22.00" data-biweekly="32.00" data-monthly="42.00">
+                 <h3 class="quanternary-text fraunces">1000g</h3>
+            <p class="body-text barlow">
+              Perfect for offices and events. Yields about 90 delightful cups.</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="ordering__process">
+        <div class="ordering__process-header"  id="step-four">
+          <h2 class="secondary-text fraunces muted-text"> Want us to grind them?</h2>
+          <img src="./assets/plan/desktop/icon-arrow.svg" alt="arrow">
+        </div>
+
+        <div class="ordering__process-cards dark-blue-text" id="step-four__choices">
+          <div class="ordering__process-card half-border" aria-selected="false" data-grind="wholebean">
+            <h3 class="quanternary-text fraunces">Wholebean</h3>
+            <p class="body-text barlow">Best choice if you cherish the full sensory experience</p>
+          </div>
+          <div class="ordering__process-card half-border" aria-selected="false" data-grind="filter">
+            <h3 class="quanternary-text fraunces">Filter</h3>
+            <p class="body-text barlow">For drip or pour-over coffee methods such as V60 or Aeropress</p>
+          </div>
+          <div class="ordering__process-card half-border" aria-selected="false" data-grind="cafetiere">
+                 <h3 class="quanternary-text fraunces">Cafetiére</h3>
+            <p class="body-text barlow">
+              Course ground beans specially suited for french press coffee</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="ordering__process" >
+        <div class="ordering__process-header" id="step-five">
+          <h2 class="secondary-text fraunces muted-text"> How often should we deliver?</h2>
+          <img src="./assets/plan/desktop/icon-arrow.svg" alt="arrow">
+        </div>
+
+        <div class="ordering__process-cards dark-blue-text " id="step-five__choices">
+          <div class="ordering__process-card half-border" aria-selected="false" data-frequency="4"  >
+            <h3 class="quanternary-text fraunces">Every week</h3>
+            <p class="body-text barlow">$<span id="weekly-price"></span> per shipment. Includes free first-class shipping.</p>
+          </div>
+          <div class="ordering__process-card half-border" aria-selected="false" data-frequency="2">
+            <h3 class="quanternary-text fraunces">Every 2 weeks</h3>
+            <p class="body-text barlow">$<span id="biweekly-price"></span> per shipment. Includes free priority shipping.</p>
+          </div>
+          <div class="ordering__process-card half-border" aria-selected="false" data-frequency="1">
+                 <h3 class="quanternary-text fraunces"> Every month</h3>
+            <p class="body-text barlow">
+              $<span id="monthly-price"></span> per shipment. Includes free priority shipping.</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <section class="summary">
+
+    <div class="summary__details  half-border">
+
+      <p class="body-text barlow">Order Summary</p>
+      <h4 class="quanternary-text fraunces">
+        “I drink coffee <span class="dark-cyan-text coffee-preference">_____</span> , with a <span class="dark-cyan-text bean-preference">_____</span> type of bean. <span class="dark-cyan-text amount-preference">_____</span> <span class="dark-cyan-text ground-preference">ground ala _____</span>, 
+        sent to me <span class="dark-cyan-text frequency-preference">_____</span>.”
+      </h4>
+    </div>
+
+    <div class="summary__cta">
+      <button class="btn btn-primary fraunces" aria-disabled="true">Create my plan!</button>
+    </div>
+  </section>
+ </main>
+  
+
+  
+
+  <!-- Modal -->
+  <aside class="modal half-border">
+    <div class="modal__header">
+      <h2 class="secondary-text fraunces">Order Summary</h2>
+    </div>
+
+    <div class="modal__container">
+
+    <div class="modal__summary ">
+      <h4 class="quanternary-text fraunces muted-text">
+        “I drink coffee <span class="dark-cyan-text coffee-preference">_____</span> , with a <span class="dark-cyan-text bean-preference">_____</span> type of bean. <span class="dark-cyan-text amount-preference">_____</span> <span class="dark-cyan-text ground-preference">ground ala _____</span>, 
+        sent to me <span class="dark-cyan-text frequency-preference">_____</span>.”
+      </h4>
+    </div>
+
+    <div class="modal__fineprints">
+      <p class="body-text barlow">Is this correct? You can proceed to checkout or go back to plan selection if something 
+        is off. Subscription discount codes can also be redeemed at the checkout.</p>
+    </div>
+
+    <div class="modal__checkout">
+      <h3 class="tertiary-text fraunces dark-blue-text">$ <span id="total">_____</span>/month</h3>
+      <button class="btn btn-primary">Checkout</button>
+    </div>
+  </div>
+    
+  </aside>  
+  <!-- End modal -->
+
+  <footer>
+    <nav class="footer-nav">
+      <div class="logo">
+        <a href="/index.html">
+          <img
+            src="./assets/shared/desktop/logo-light.svg"
+            alt="coffeeroasters"
+          />
+        </a>
+      </div>
+
+      <ul>
+        <li>
+          <a class="nav-text" href="/index.html">Home</a>
+        </li>
+        <li>
+          <a class="nav-text" href="/about.html">About us</a>
+        </li>
+        <li>
+          <a class="nav-text" href="/plan.html">Create your plan</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="social__icons">
+      <a target="_blank" href="https://www.facebook.com">
+        <img
+          src="./assets/shared/desktop/icon-facebook.svg"
+          alt="facebook link"
+        />
+      </a>
+      <a target="_blank" href="https://www.twitter.com">
+        <img
+          src="./assets/shared/desktop/icon-twitter.svg"
+          alt="twitter link"
+        />
+      </a>
+      <a target="_blank" href="https://www.instagram.com">
+        <img
+          src="./assets/shared/desktop/icon-instagram.svg"
+          alt="instagram link"
+        />
+      </a>
+    </div>
+  </footer>
+
+  <script src="./js/mobile.js"></script>
+
+  <script src="./js/plan.js"></script>
+</body>
+
+</html>
