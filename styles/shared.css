@@ -16,6 +16,7 @@
 
 body {
   padding: 0 80px;
+  background-color: var(--light-cream);
 }
 
 li {
@@ -71,7 +72,7 @@ a {
 }
 
 .nav-text {
-  font-size: 12px;
+  /* font-size: 15px; */
   line-height: 15px;
   letter-spacing: 1px;
   color: var(--main-grey);
@@ -197,6 +198,10 @@ footer {
 .footer-nav ul {
   display: flex;
   gap: 1rem;
+}
+
+.footer-nav .nav-text:hover {
+  color: #fff;
 }
 
 .social__icons * {
